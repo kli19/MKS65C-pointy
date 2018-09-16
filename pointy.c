@@ -35,7 +35,15 @@ int main(){
     p++;
   }
 
-
+  printf("INCREMENTING EACH INDIVIDUAL BYTE BY 16\n------------------\n");
+  p = pointer;
+  for (int i = 0; i < sizeof(num); i++){
+    *p+= 16;
+    printf("byte %d in hex: %hhx \n", i, *p);
+    printf("byte %d in decimal: %hhu \n", i, *p);
+    printf("\n");
+    p++;
+  }
   return 0;
 
 }
