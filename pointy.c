@@ -18,7 +18,8 @@ int main(){
 
   printf("PRINTING OUT EACH INDIVIDUAL BYTE\n------------------\n");
   p = pointer;
-  for (int i = 0; i < sizeof(num); i++){
+  int i;
+  for (i = 0; i < sizeof(num); i++){
     printf("byte %d in hex: %hhx \n", i, *p);
     printf("byte %d in decimal: %hhu \n", i, *p);
     printf("\n");
@@ -37,7 +38,7 @@ int main(){
 
   printf("INCREMENTING EACH INDIVIDUAL BYTE BY 16\n------------------\n");
   p = pointer;
-  for (int i = 0; i < sizeof(num); i++){
+  for (i = 0; i < sizeof(num); i++){
     *p+= 16;
     printf("byte %d in hex: %hhx \n", i, *p);
     printf("byte %d in decimal: %hhu \n", i, *p);
